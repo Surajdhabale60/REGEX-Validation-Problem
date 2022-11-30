@@ -10,7 +10,7 @@ namespace RegexValidateProblem
             while(flag)
             {
                 Console.WriteLine("Enter option");
-                Console.WriteLine(" Postal Code Validation\n 1.Postal Code\n 2.Taking Alphabet At Begninning\n 3.Taking Alphabet at End\n 4.Space In Between Code\n\n Email Validation:\n 5.ValidateEmailOne");
+                Console.WriteLine(" Postal Code Validation\n 1.Postal Code\n 2.Taking Alphabet At Begninning\n 3.Taking Alphabet at End\n 4.Space In Between Code\n\n Email Validation:\n 5.Validate Email One\n 6.Validate Email Two");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -43,6 +43,12 @@ namespace RegexValidateProblem
                         Console.WriteLine("Enter EmailID");
                         string code4 = Convert.ToString(Console.ReadLine());
                         validate.VerifyEmail(code4);
+                        break;
+                    case 6:
+                        EmailValidator validate1 = new EmailValidator();
+                        Console.WriteLine("Enter EmailID");
+                        string code5 = Convert.ToString(Console.ReadLine());
+                        validate1.VerifyEmail(code5);
                         break;
                 }
             }
