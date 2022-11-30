@@ -10,7 +10,7 @@ namespace RegexValidateProblem
             while(flag)
             {
                 Console.WriteLine("Enter option");
-                Console.WriteLine(" 1.Postal Code\n 2.Taking Alphabet At Begninning\n 3.Taking Alphabet at End");
+                Console.WriteLine(" 1.Postal Code\n 2.Taking Alphabet At Begninning\n 3.Taking Alphabet at End\n 4.Space In Between Code");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -31,6 +31,12 @@ namespace RegexValidateProblem
                         Console.WriteLine("Enter PostalCode");
                         string code2 = Convert.ToString(Console.ReadLine());
                         postalCode2.AlphabetAtBeginning(code2);
+                        break;
+                    case 4:
+                        PostalCode postalCode3 = new PostalCode();
+                        Console.WriteLine("Enter PostalCode");
+                        string code3 = Convert.ToString(Console.ReadLine());
+                        postalCode3.AlphabetAtBeginning(code3);
                         break;
                 }
             }
